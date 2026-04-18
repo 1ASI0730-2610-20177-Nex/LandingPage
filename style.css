@@ -307,6 +307,68 @@ a {
     color: var(--text-secondary);
 }
 
+/* ABOUT US */
+.section-about .about-lead {
+    max-width: 720px;
+    margin: 0 auto;
+    color: var(--text-secondary);
+    font-size: 1rem;
+}
+
+.container-team-div {
+    margin-top: 28px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+}
+
+.card-team {
+    width: calc((100% - 80px) / 3);
+    min-width: 260px;
+    max-width: 340px;
+    padding: 24px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-team--highlight {
+    border-color: rgba(37, 99, 235, 0.35);
+    box-shadow: 0 12px 40px rgba(37, 99, 235, 0.12);
+}
+
+.team-emoji {
+    font-size: 2rem;
+    line-height: 1;
+    margin-bottom: 4px;
+}
+
+.card-team h3 {
+    font-size: 1.2rem;
+    color: var(--text-main);
+}
+
+.team-role {
+    font-size: 0.78rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--primary);
+}
+
+.team-role--design {
+    color: #7c3aed;
+}
+
+.team-bio {
+    font-size: 0.92rem;
+    color: var(--text-secondary);
+    line-height: 1.55;
+}
+
 /* PRICING */
 .container-pricing {
     width: min(1040px, 92vw);
