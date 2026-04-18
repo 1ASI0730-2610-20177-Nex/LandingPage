@@ -206,3 +206,36 @@ a {
 .nav-link:hover {
     color: #ffffff;
 }
+#hero {
+    position: relative;
+    z-index: 1;
+    color: #ffffff;
+}
+
+.title-main {
+    font-size: clamp(2rem, 5vw, 4rem);
+    max-width: 850px;
+    line-height: 1.1;
+}
+
+.txt-primary {
+    font-size: clamp(1rem, 2.1vw, 1.2rem);
+    max-width: 760px;
+    color: var(--text-light);
+}
+
+.btn-primary {
+    border: none;
+    border-radius: 999px;
+    background: linear-gradient(135deg, var(--primary), var(--primary-hover));
+    color: #fff;
+    font-weight: 600;
+    padding: 12px 22px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(37, 99, 235, 0.28);
+}
