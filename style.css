@@ -57,6 +57,19 @@ a {
     padding: 120px 8vw 56px;
     text-align: center;
 }
+.card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 24px;
+    box-shadow: var(--shadow-soft);
+    transition: transform 0.2s ease;
+}
+.card:hover {
+    transform: translateY(-4px);
+}
+
+/* HEADER */
 .header {
     position: relative;
     background-image: url("https://media.licdn.com/dms/image/v2/D5612AQEOskAm8FWDVg/article-cover_image-shrink_720_1280/B56ZYLfq79H0AI-/0/1743949575075?e=2147483647&v=beta&t=2oB9rA4gAKi2GKj06JtT09T089FACFhqy7IWGeD7ZMg");
@@ -238,4 +251,58 @@ a {
 .btn-primary:hover {
     transform: translateY(-2px);
     box-shadow: 0 8px 25px rgba(37, 99, 235, 0.28);
+}
+
+/* MAIN SECTIONS */
+.main {
+    text-align: center;
+}
+#feature,
+#about,
+#platform,
+#pricing,
+#contact {
+    background: linear-gradient(180deg, var(--bg), var(--surface-muted));
+}
+.container-feature,
+.container-about,
+.container-platform,
+.contact-div {
+    width: min(1100px, 92vw);
+    margin: 0 auto;
+}
+.container-feature-div {
+    margin-top: 22px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+}
+#feature .card {
+    width: calc((100% - 60px) / 4);
+    min-width: 230px;
+    max-width: 260px;
+}
+.card--feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-top: 28px;
+}
+
+.feature-emoji {
+    font-size: 2.5rem;
+    line-height: 1;
+    margin-bottom: 4px;
+}
+
+.card--feature h2 {
+    font-size: 1.15rem;
+}
+
+.card--feature p {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
 }
