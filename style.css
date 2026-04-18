@@ -57,5 +57,32 @@ a {
     padding: 120px 8vw 56px;
     text-align: center;
 }
-
+.header {
+    position: relative;
+    background-image: url("https://media.licdn.com/dms/image/v2/D5612AQEOskAm8FWDVg/article-cover_image-shrink_720_1280/B56ZYLfq79H0AI-/0/1743949575075?e=2147483647&v=beta&t=2oB9rA4gAKi2GKj06JtT09T089FACFhqy7IWGeD7ZMg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(15, 23, 42, 0.78), rgba(15, 23, 42, 0.62));
+}
+.div-header {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    width: min(1180px, 96vw);
+    padding: 14px 20px;
+    border: 1px solid rgba(226, 232, 240, 0.25);
+    border-radius: 999px;
+    background: rgba(15, 23, 42, 0.6);
+    backdrop-filter: blur(14px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
