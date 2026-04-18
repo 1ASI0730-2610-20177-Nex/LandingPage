@@ -426,3 +426,40 @@ a {
     width: 100%;
     text-align: center;
 }
+
+/* CONTACT-US */
+.contact-div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    align-items: center;
+    gap: 22px;
+}
+
+.contact-us {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 28px;
+    box-shadow: var(--shadow-soft);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: left;
+}
+
+.contact-div img {
+    width: 100%;
+    max-height: 460px;
+    object-fit: contain;
+}
+
+.input {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px;
+    outline: none;
+}
+
+.input:focus {
+    border-color: var(--primary);
+}
