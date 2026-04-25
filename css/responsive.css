@@ -1,1 +1,60 @@
+/* Breakpoints móviles y tablet */
+@media (max-width: 768px) {
+    header {
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 16px 18px;
+    }
+
+    .header-brand {
+        order: 1;
+    }
+
+    .header-actions {
+        order: 2;
+        margin-left: auto;
+    }
+
+    .header-nav {
+        order: 3;
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+
+    .header-nav-list {
+        gap: 0.4rem 0.75rem;
+    }
+
+    .header-nav-link {
+        font-size: 0.85rem;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero .hero-dashboard-btn {
+        min-width: auto;
+        width: 100%;
+        max-width: 20rem;
+    }
+
+    #form-suscripcion {
+        flex-direction: column;
+    }
+
+    .testimonial-nav {
+        width: 38px;
+        height: 38px;
+    }
+
+    .card-testimonial {
+        flex: 0 0 min(280px, 88vw);
+    }
+
+    .container-team-div .card-team {
+        flex: 1 1 100%;
+        max-width: 22rem;
+    }
+}
 
