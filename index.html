@@ -3,272 +3,245 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nex</title>
-  <link rel="stylesheet" href="./style.css">
-  <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png">
+  <title>ElectroCorp | Smart Energy Management</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-
-<header class="header">
-  <div class="div-header">
-    <div class="container-logo">
-      <p class="title-logo">Nex</p>
-      <img class="icon-img" src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" alt="icon">
+<div id="contenido-web">
+  <header>
+    <div class="header-brand">
+      <a href="index.html" class="header-brand-link">
+        <img src="img/logo.png" alt="ElectroCorp" class="header-site-logo" width="44" height="44">
+        <span>ElectroCorp.Web</span>
+      </a>
     </div>
-    <!--HEADER/NAVBAR---------->
-    <nav class="navbar" aria-label="Main">
-      <div class="navbar-links">
-        <a href="#hero" class="nav-link">Hero</a>
-        <a href="#feature" class="nav-link">Features</a>
-        <a href="#about" class="nav-link">About us</a>
-        <a href="#platform" class="nav-link">Our platform</a>
-        <a href="#pricing" class="nav-link">Pricing</a>
-        <a href="#contact" class="nav-link">Contact</a>
-      </div>
-      <div class="navbar-actions">
-        <div class="lang-switch" role="group" aria-label="Idioma">
-          <button type="button" class="lang-btn lang-btn--active">EN</button>
-          <button type="button" class="lang-btn">ES</button>
-        </div>
-        <button type="button" class="btn-nav btn-nav--ghost">Login</button>
-        <button type="button" class="btn-nav btn-nav--primary">Register</button>
-      </div>
+    <nav class="header-nav" aria-label="Secciones">
+      <ul class="header-nav-list">
+        <li><a href="#hero" class="header-nav-link" data-i18n="nav_home">Home</a></li>
+        <li><a href="#description" class="header-nav-link" data-i18n="nav_desc">Description</a></li>
+        <li><a href="#goals" class="header-nav-link" data-i18n="nav_goals">Goals</a></li>
+        <li><a href="#service" class="header-nav-link" data-i18n="nav_plans">Pricing</a></li>
+        <li><a href="#reviews" class="header-nav-link" data-i18n="nav_reviews">Reviews</a></li>
+        <li><a href="#about" class="header-nav-link" data-i18n="nav_about">About us</a></li>
+        <li><a href="#device" class="header-nav-link" data-i18n="nav_smart">Smart Plugs</a></li>
+        <li><a href="#contact" class="header-nav-link" data-i18n="nav_support">Support</a></li>
+      </ul>
     </nav>
-  </div>
-  <!--HEADER/HERO------------>
-  <section    id="hero" class="full-screen section-content">
-    <h1     class="title-main">Smart insights for your home</h1>
-    <p      class="txt-primary">Track energy, devices and activity with a simple and powerful dashboard</p>
-    <button class="btn-primary">Try it right now!</button>
+    <div class="header-actions">
+      <a href="login.html" class="header-btn header-btn-outline" data-i18n="nav_login">Iniciar sesión</a>
+      <a href="register.html" class="header-btn header-btn-primary" data-i18n="nav_register">Registrarse</a>
+      <a href="#" class="header-lang" onclick="toggleLanguage(); return false;" aria-label="Cambiar idioma"><i class="fa fa-globe"></i> <span id="lang-text">ES</span></a>
+    </div>
+  </header>
+
+  <section id="hero" class="hero">
+    <div class="background-image" style="background-image: url('img/FondoPantalla2.png');"></div>
+    <h1 data-i18n="hero_title"> Take control of your home's electricity consumption </h1>
+    <a href="dashboard.html" class="btn hero-dashboard-btn" data-i18n="hero_dashboard">Ir al dashboard</a>
+    <h3 data-i18n="hero_subtitle"> The ultimate fusion between IoT Sensors and Consumer Intelligence </h3>
+
+    <div class="search-container">
+      <input type="text" placeholder="Search keyword or question" id="searchInput">
+      <button type="button" id="btn-buscar"><i class="fa fa-search"></i></button>
+    </div>
+    <hr>
   </section>
 
-</header>
-<!--MAIN------------>
-<main class="main">
-  <!--MAIN/FEATURE-------->
-  <section id="feature" class="full-screen section-content">
-    <div class="container-feature">
-      <h2>Features</h2>
-      <div class="container-feature-div">
+  <section id="description" class="description">
+    <br></br>
+    <h3 class="title" data-i18n="desc_title"> Start-Up Description</h3>
+    <p data-i18n="desc_text1">
+      We are a tech startup focused on democratizing home automation and energy efficiency for Peruvian households.
+    <p data-i18n="desc_text2">
+      Currently, converting a traditional house into a "smart home" is perceived as a costly luxury, requiring
+      electrical wiring modifications, hiring specialized technicians, and dealing with generic applications that
+      do not reflect local consumption realities or are simply complicated to understand. Furthermore, high
+      electricity costs are a constant concern for families and new businesses.
+    <p data-i18n="desc_text3">
+      We have developed a plug-and-play IoT (Internet of Things) ecosystem that installs in minutes over existing
+      switches and outlets, without the need to break walls, smash ceilings, or alter the electrical grid. Through
+      our web and mobile platform, users can control their appliances remotely, schedule turn-on times, and monitor
+      their home's energy consumption in real-time.</p>
+    <hr>
+    <br></br>
+  </section>
 
-        <div class="card card--feature">
-          <span class="feature-emoji" aria-hidden="true">💻</span>
-          <h2>Centralization</h2>
-          <p>Unified Device Control</p>
-          <p>Connect and manage all your smart devices from a single, centralized platform.</p>
-        </div>
+  <section id="goals" class="goals">
+    <h3 class="title" data-i18n="goals_title"> Our Goals</h3>
+    <p data-i18n="goals_text">To develop an easy-to-understand plug-and-play Internet of Things (IoT) ecosystem that
+      allows families and new businesses in Peru to efficiently manage their electrical consumption, optimizing their
+      economic expenses and promoting sustainability through a software platform: an app and/or website.</p>
+    <ul class="grid">
+      <li class="small" style="background-image: url('img/sensorLuz.png');"></li>
+      <li class="small" style="background-image: url('img/AppImage.jpg');"></li>
+    </ul>
+    <hr>
+    <br></br>
+  </section>
 
-        <div class="card card--feature">
-          <span class="feature-emoji" aria-hidden="true">📈</span>
-          <h2>Efficiency</h2>
-          <p>Energy Optimization</p>
-          <p>Analyze energy usage patterns and reduce unnecessary consumption with clear insights.</p>
-        </div>
+  <section id="service" class="service-section">
+    <h3 class="title" data-i18n="plans_title">Our Plans</h3>
+    <p data-i18n="plans_subtitle">Choose the plan that best fits your consumption and infrastructure size.</p>
+    <div class="service-grid">
 
-        <div class="card card--feature">
-          <span class="feature-emoji" aria-hidden="true">🕹️</span>
-          <h2>Accessibility</h2>
-          <p>Remote Control</p>
-          <p>Access and control your smart home anytime, anywhere from any device.</p>
-        </div>
+      <div class="service-card">
+        <h4>Free Plan</h4>
+        <h2 data-i18n="plan_free_price">S/ 0 <span>/mo</span></h2>
+        <p data-i18n="plan_free_desc">Ideal for apartments and traditional homes.</p>
+        <ul>
+          <li data-i18n="plan_free_li1"><i class="fa fa-check"></i> Up to 3 smart plugs</li>
+          <li data-i18n="plan_free_li2"><i class="fa fa-check"></i> Real-time watt monitoring</li>
+          <li data-i18n="plan_free_li3"><i class="fa fa-check"></i> Basic ElectroCorp App</li>
+        </ul>
+        <a href="#contact" class="btn" data-i18n="btn_start">Start for Free</a>
+      </div>
 
-        <div class="card card--feature">
-          <span class="feature-emoji" aria-hidden="true">⚙️</span>
-          <h2>Management</h2>
-          <p>Smart Organization</p>
-          <p>Organize devices by spaces and simplify the management of your home environment.</p>
-        </div>
-
-        <div class="card card--feature">
-          <span class="feature-emoji" aria-hidden="true">🛡️</span>
-          <h2>Security</h2>
-          <p>Intelligent Alerts</p>
-          <p>Receive real-time notifications when unusual behavior is detected in your system.</p>
-        </div>
-
-        <div class="card card--feature">
-          <span class="feature-emoji" aria-hidden="true">🖥️</span>
-          <h2>Analytics</h2>
-          <p>Data-Driven Insights</p>
-          <p>Turn device data into meaningful insights to improve decisions and optimize your home.</p>
-        </div>
-
+      <div class="service-card premium">
+        <h4>Enterprise Plan</h4>
+        <h2 data-i18n="plan_ent_price">Custom</h2>
+        <p data-i18n="plan_ent_desc">Ideal for businesses, offices, and large homes.</p>
+        <ul>
+          <li data-i18n="plan_ent_li1"><i class="fa fa-star"></i> Unlimited Devices</li>
+          <li data-i18n="plan_ent_li2"><i class="fa fa-star"></i> Web Administrative Dashboard</li>
+          <li data-i18n="plan_ent_li3"><i class="fa fa-star"></i> 24/7 Technical Support</li>
+        </ul>
+        <a href="#contact" class="btn" data-i18n="btn_contact">Contact Sales</a>
       </div>
     </div>
+    <hr>
+    <br></br>
   </section>
 
-  <!--MAIN/ABOUT-------->
-  <section id="about" class="full-screen section-content section-about">
+  <section id="reviews" class="reviews section-testimonials">
+    <h3 class="title" data-i18n="testimonials_sectionTitle">What our clients say</h3>
+    <div class="testimonial-slider-outer">
+      <button type="button" class="testimonial-nav testimonial-nav--prev" data-i18n-aria="meta.sliderPrev" aria-label="Previous reviews">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+      </button>
+      <div class="testimonial-slider" id="testimonialSlider" data-i18n-aria="meta.testimonialsSlider" aria-label="Client reviews slider" tabindex="0">
+        <article class="card card-testimonial">
+          <img class="testimonial-avatar" src="https://www.infobae.com/resizer/v2/CPGKD5EXLZEO7OSWENSND5OVTY.jpg?auth=8306f0fc4fae2e4732d6c494ba9c1b392066bcceee750fc18bac160e24c62897&amp;smart=true&amp;width=992&amp;height=558&amp;quality=85" alt="Valentino Cruz">
+          <h3>Valentino Cruz</h3>
+          <p class="testimonial-role" data-i18n="testimonials_rolePremium">Premium customer</p>
+          <p class="testimonial-quote" data-i18n="testimonials_q1">"ElectroCorp.Web shows which appliance is really driving watts in our home. I lowered the bill without rewiring the house or hiring special technicians—it finally feels like smart energy, not a luxury we can't afford."</p>
+        </article>
+        <article class="card card-testimonial">
+          <img class="testimonial-avatar" src="https://i.pinimg.com/736x/46/91/97/46919703baafce4552b2fa913bdf6544.jpg" alt="Thiago Medina">
+          <h3>Thiago Medina</h3>
+          <p class="testimonial-role" data-i18n="testimonials_roleFree">Free user</p>
+          <p class="testimonial-quote" data-i18n="testimonials_q2">"We had the setup running over our existing switches and outlets in an afternoon—no broken walls, no new grid. That plug-and-play piece is what sold us; generic apps never matched how we actually use power in Peru."</p>
+        </article>
+        <article class="card card-testimonial">
+          <img class="testimonial-avatar" src="https://www.latercera.com/resizer/v2/CP57ROPIQRBABHJVPYNOD5T3W4.jpeg?auth=5ddd40fdc5b1cfbd6dd64c417ba58ba4797929451bead5919d0a9a0de16f0524&amp;smart=true&amp;width=800&amp;height=1194&amp;quality=70" alt="Lautaro Reyes">
+          <h3>Lautaro Reyes</h3>
+          <p class="testimonial-role" data-i18n="testimonials_rolePremium">Premium customer</p>
+          <p class="testimonial-quote" data-i18n="testimonials_q3">"I schedule my appliances and watch consumption in real time. When something stayed on all night, the alert saved me an unnecessary cost—our electricity spend was already a pain point, and this gives us real control."</p>
+        </article>
+        <article class="card card-testimonial">
+          <img class="testimonial-avatar" src="https://lastfm.freetls.fastly.net/i/u/ar0/795e76529611a50bc65374e23f1e6161.jpg" alt="Barbara Cantarero">
+          <h3>Barbara Cantarero</h3>
+          <p class="testimonial-role" data-i18n="testimonials_rolePremium">Premium customer</p>
+          <p class="testimonial-quote" data-i18n="testimonials_q4">"The web platform is easy to read—not another complicated dashboard. I finally see local consumption the way it really happens, and I plan the week with real data instead of guessing on the bill."</p>
+        </article>
+        <article class="card card-testimonial">
+          <img class="testimonial-avatar" src="https://akamai.sscdn.co/uploadfile/letras/fotos/0/a/1/a/0a1a2368485c5fea7bb5aa9ca3377a27.jpg" alt="Matias Solano">
+          <h3>Matias Solano</h3>
+          <p class="testimonial-role" data-i18n="testimonials_roleFree">Free user</p>
+          <p class="testimonial-quote" data-i18n="testimonials_q5">"We run everything through ElectroCorp.Web: remote on/off, schedules, and monitoring from the app. For our household, democratizing home automation and cutting energy costs is the point—and this is the first stack that made it feel realistic."</p>
+        </article>
+      </div>
+      <button type="button" class="testimonial-nav testimonial-nav--next" data-i18n-aria="meta.sliderNext" aria-label="Next reviews">
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </button>
+    </div>
+    <hr>
+  </section>
+
+  <section id="about" class="section-about">
     <div class="container-about">
-      <h2>About us</h2>
-      <p class="about-lead">We are Software Engineering students at <strong>UPC</strong>, building TechWatch together—a smart-home monitoring and analytics experience focused on clarity, savings, and better everyday decisions.</p>
+      <h2 class="title about-title" data-i18n="about_title">About us</h2>
+      <p class="about-lead" data-i18n="about_lead">UPC Software Engineering students building ElectroCorp.Web</p>
       <div class="container-team-div">
         <article class="card card-team">
-          <span class="team-emoji" aria-hidden="true">🚀</span>
-          <h3>Alexander Fernández</h3>
-          <p class="team-role team-role--design">UI / UX &amp; Frontend-oriented Full Stack Developer</p>
-          <p class="team-bio">Software Engineering student at UPC. Same stack as above (C++, HTML, CSS, JS, C#, Python, Java) with Flutter and a stronger focus on design, layouts, and user-facing experience for future mobile and web frontends.</p>
+          <img class="team-upc-badge" src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" alt="UPC">
+          <h3>Diego Alexander Cabrejos Chocco</h3>
+          <p class="team-role" data-i18n="about_role_diego">Logic &amp; backend-oriented</p>
+          <p class="team-bio" data-i18n="about_bio_diego">Software Engineering student at UPC. C++, HTML, CSS, JavaScript, C#, Python, and Java. Contributes to backend structure and APIs for ElectroCorp.Web.</p>
         </article>
         <article class="card card-team">
-          <span class="team-emoji" aria-hidden="true">🛠️</span>
-          <h3>Ronal Toro</h3>
-          <p class="team-role">Backend  &amp; Systems-oriented Full Stack Develope</p>
-          <p class="team-bio">Software Engineering student at UPC. Knowledge in C++, HTML, CSS, and JavaScript. Interested in connecting features cleanly when we move from this landing to real frontend and backend services.</p>
+          <img class="team-upc-badge" src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" alt="UPC">
+          <h3>Sebastian Oswaldo Tavara Correa</h3>
+          <p class="team-role" data-i18n="about_role_seb">Data &amp; monitoring-oriented</p>
+          <p class="team-bio" data-i18n="about_bio_seb">Software Engineering student at UPC. C++, HTML, CSS, JavaScript. Data flow, metrics, and power-usage views for the platform.</p>
         </article>
-
-
-      </div>
-    </div>
-  </section>
-
-  <!--MAIN/PLATFORM-------->
-  <section id="platform" class="full-screen section-content section-platform" aria-labelledby="platform-title">
-    <div class="container-platform">
-      <h2 id="platform-title">Our platform</h2>
-      <p class="platform-lead">
-        Technical direction for teammates, teachers, and contributors—kept separate from pricing and our team story.
-      </p>
-
-      <div class="platform-card">
-        <h3 class="platform-card-title">Architecture &amp; stack (planned)</h3>
-
-        <p class="platform-text">
-          The public web client is built using <strong>Vue</strong> with <strong>Vite</strong> for fast development and optimized performance.
-          Server-side services are developed in <strong>C#</strong>, following <strong>Domain-Driven Design (DDD)</strong> and a
-          <strong>Clean Architecture</strong> approach to keep domain logic (homes, devices, consumption) independent, scalable, and easy to test as the system evolves.
-        </p>
-
-        <div class="platform-logos" aria-label="Platform technologies">
-          <div class="platform-logo-card">
-            <img class="platform-logo-img" src="https://images.seeklogo.com/logo-png/40/1/vue-js-logo-png_seeklogo-409842.png" alt="Vue logo">
-            <p class="platform-logo-label"><strong>Vue + Vite</strong> - Frontend</p>
-          </div>
-
-          <div class="platform-logo-card">
-            <img class="platform-logo-img" src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Csharp_Logo.png" alt="C# logo">
-            <p class="platform-logo-label"><strong>C#</strong> - Backend</p>
-          </div>
-        </div>
-
-        <ul class="platform-list">
-          <li><strong>Vue + Vite</strong> — fast, reactive UI with a modern development experience and scalable component structure.</li>
-          <li><strong>C# + DDD</strong> — domain-focused design that keeps business logic organized and maintainable.</li>
-          <li><strong>Clean Architecture</strong> — clear separation between presentation, application, domain, and infrastructure layers.</li>
-        </ul>
-      </div>
-    </div>
-
-  </section>
-
-  <!--MAIN/PRICING-------->
-  <section id="pricing" class="full-screen section-content section-pricing">
-    <div class="container-pricing">
-      <h2>Pricing</h2>
-      <h3 class="pricing-subtitle">Plans designed around your smart home needs</h3>
-      <p class="pricing-intro">
-        Nex follows a <strong>freemium</strong> approach: begin with a free plan to experience centralized control and basic energy insights, then upgrade as you need deeper analytics, smarter alerts, and advanced reporting. All prices are shown in <strong>Peruvian soles (PEN)</strong> and are <strong>approximate</strong>—they may vary due to taxes, IGV, or promotional offers.
-      </p>
-
-      <div class="card-pricing">
-
-        <article class="card card-plan">
-          <h4 class="plan-name">Free</h4>
-          <p class="plan-tagline">
-            Ideal for beginners and users who want simple control without any commitment.
-          </p>
-          <p class="plan-price">
-            <span class="plan-amount">S/&nbsp;0</span>
-            <span class="plan-period">/ month</span>
-          </p>
-          <ul class="plan-features" aria-label="Free plan includes">
-            <li>Register up to <strong>5 devices</strong> in your home</li>
-            <li><strong>Room-based organization</strong> for better device management</li>
-            <li><strong>Basic dashboards</strong> with live status and recent activity</li>
-            <li><strong>Energy overview</strong> with consumption trends from the past 7 days</li>
-            <li><strong>Mobile-optimized interface</strong> for easy access anywhere</li>
-            <li>Email support with standard response times</li>
-          </ul>
-          <button class="btn-primary btn-plan" type="button">Create free account</button>
+        <article class="card card-team">
+          <img class="team-upc-badge" src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" alt="UPC">
+          <h3>Ghorghet Tuncar Saul</h3>
+          <p class="team-role" data-i18n="about_role_gho">Logic &amp; integration-oriented</p>
+          <p class="team-bio" data-i18n="about_bio_gho">Software Engineering student at UPC. C++, HTML, CSS, and JavaScript. Connects services and features end-to-end.</p>
         </article>
-
-        <article class="card card-plan card-plan--premium">
-          <h4 class="plan-name">Premium</h4>
-          <p class="plan-tagline">
-            Designed for users who want deeper insights, automation, and smarter decision-making.
-          </p>
-          <p class="plan-price">
-            <span class="plan-amount">S/&nbsp;15</span>
-            <span class="plan-period">/ month</span>
-            <span class="plan-billing">monthly billing · cancel anytime</span>
-          </p>
-          <ul class="plan-features" aria-label="Premium plan includes">
-            <li><strong>All Free features</strong> plus higher or unlimited device capacity</li>
-            <li><strong>Extended data history</strong> to analyze long-term usage patterns</li>
-            <li><strong>Custom alerts</strong> for unusual activity or consumption spikes</li>
-            <li><strong>Reports & exports</strong> in formats like CSV and PDF</li>
-            <li><strong>Priority support</strong> with faster response times</li>
-            <li>Early access to <strong>new features</strong> and integrations</li>
-          </ul>
-          <button class="btn-primary btn-plan" type="button">Start Premium trial</button>
+        <article class="card card-team">
+          <img class="team-upc-badge" src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" alt="UPC">
+          <h3>Alexander Piero Garfias</h3>
+          <p class="team-role" data-i18n="about_role_alex">UI / UX &amp; frontend-oriented</p>
+          <p class="team-bio" data-i18n="about_bio_alex">Software Engineering student at UPC. C++, HTML, CSS, JavaScript, C#, Python, Java, and Flutter. Design and interface for the ElectroCorp.Web platform and the app.</p>
         </article>
-
+        <article class="card card-team">
+          <img class="team-upc-badge" src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" alt="UPC">
+          <h3>Ronal Toro Turpo</h3>
+          <p class="team-role" data-i18n="about_role_ronal">Logic &amp; quality-oriented</p>
+          <p class="team-bio" data-i18n="about_bio_ronal">Software Engineering student at UPC. C++, HTML, CSS, and JavaScript. Code quality, testing, and a stable handoff between features.</p>
+        </article>
       </div>
-
-      <p class="pricing-footnote">
-        Nex is still evolving—features listed reflect our planned roadmap. Initial versions may include simulated data while full device integrations are being developed.
-      </p>
     </div>
   </section>
 
-  <!--MAIN/CONTACT-------->
-  <section id="contact" class="full-screen section-content">
-    <div class="contact-div">
-      <div class="contact-us">
-        <h2>Contact Us</h2>
-        <p>Have questions about Nex? </p>
-        <p>We’re here to help you manage your smart home more efficiently.</p>
-        <input    class="input"           type="name"     placeholder="Albert Camus">
-        <input    class="input"           type="email"    placeholder="camus@nex">
-
-        <textarea class="input" rows="5" type= "name"     placeholder="Your Message"></textarea>
-
-      </div>
-      <img src="https://mi-epg.upc.edu.pe/assets/images/guia-estudiante/biblioteca/bibliotecologos2x.jpg" alt="soport">
-
-    </div>
+  <section id="device" class="device">
+    <h3 class="title" data-i18n="device_title"> ElectroCorp I.O.T. Systems </h3>
+    <p data-i18n="device_subtitle"> Smart Plugs at your fingertips </p>
+    <ul class="grid">
+      <li class="small" style="background-image: url('img/EnchufeInteligente1.jpg');"></li>
+      <li class="small" style="background-image: url('img/EnchufeInteligente2.jpg');"></li>
+    </ul>
+    <hr>
+    <br></br>
   </section>
 
-</main>
-<footer class="footer">
-
-  <section class="container-footer">
-    <div class="container-footer-div">
-      <div class="section-footer">
-        <h2>Nex</h2>
-        <h3>Smart Home Control, Simplified</h3>
-        <p>Nex brings all your smart devices together in one place,</p>
-        <p>helping you control, automate, and optimize your home with real-time insights.</p>
-      </div>
-      <div class="section-footer">
-        <h2>Company</h2>
-        <p><a href="#about">About us</a></p>
-        <p><a href="#platform">Our platform</a></p>
-        <p><a href="#contact">Contact</a></p>
-        <p><a href="#pricing">Pricing</a></p>
-      </div>
-      <div class="section-footer">
-        <h2>Social Media</h2>
-        <p>Facebook</p>
-        <p>Twitter</p>
-        <p>Instagram</p>
-      </div>
-    </div>
-    <div class="section-footer-column">
-      <p>© 2026 Nex. All rights reserved.</p>
-    </div>
-
+  <section id="contact" class="contact">
+    <h3 class="title" data-i18n="contact_title">Join the Electrical Revolution</h3>
+    <p data-i18n="contact_subtitle">The future is efficient. Subscribe to receive saving tips, app updates, and exclusive offers on our upcoming smart plug pack.</p>
+    <form id="form-suscripcion">
+      <input type="email" id="email-boletin" placeholder="Your best email here" required>
+      <button type="submit" class="btn" data-i18n="btn_send">Submit</button>
+    </form>
+    <p id="mensaje-suscripcion" style="display: none; color: var(--main-blue); margin-top: 10px;"></p>
+    <hr>
+    <br></br>
   </section>
 
-</footer>
+  <footer>
+    <ul>
+      <li><a href="#"><i class="fa fa-github-square"></i></a></li>
+      <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+      <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+    </ul>
+    <p>Copyright(C) 2026 <a href="#" target="_blank">ElectroCorp.Web</a></p>
+    <p data-i18n="footer_rights">All rights reserved.</p>
+    <button id="btn-audio" style="position: fixed; bottom: 20px; right: 20px; z-index: 9999; padding: 15px 18px; border-radius: 50%; background: var(--main-blue); border: none; cursor: pointer; box-shadow: 0 4px 10px rgba(0,0,0,0.5);">
+      <i class="fa fa-volume-off" id="icono-audio" style="font-size: 20px; color: #000;"></i>
+    </button>
+  </footer>
+</div>
+
+<audio id="musica-fondo" loop>
+  <source src="audio/ElectroCorp.mp3" type="audio/mp3">
+</audio>
+
+<script src="js/i18n.js"></script>
+<script src="js/search.js"></script>
+<script src="js/newsletter.js"></script>
+<script src="js/testimonials.js"></script>
+<script src="js/audio.js"></script>
 </body>
 </html>
