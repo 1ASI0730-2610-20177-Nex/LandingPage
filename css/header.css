@@ -1,0 +1,124 @@
+﻿/* Barra de navegación */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem 1.5rem;
+    padding: 18px 32px 18px 28px;
+    flex-wrap: wrap;
+    background-color: rgba(10, 15, 24, 0.95);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.header-brand {
+    flex: 0 0 auto;
+}
+
+.header-brand-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.header-site-logo {
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.header-nav {
+    flex: 1 1 280px;
+    display: flex;
+    justify-content: center;
+    min-width: 0;
+}
+
+.header-nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem 1.1rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.header-nav-link {
+    color: #00d2ff !important;
+    font-size: 0.95rem;
+    white-space: nowrap;
+}
+
+.header-nav-list li a:hover,
+.header-nav-link:hover {
+    color: #fff !important;
+    text-shadow: 0 0 8px var(--main-blue);
+}
+
+.header-actions {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 0.5rem 0.65rem;
+}
+
+.header-btn {
+    display: inline-block;
+    padding: 0.5rem 1.1rem;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.2;
+    white-space: nowrap;
+    width: auto;
+    transition: background 0.3s, color 0.3s, border-color 0.3s, box-shadow 0.3s;
+}
+
+.header-btn-primary {
+    background: var(--main-blue);
+    color: #0a0f18 !important;
+    border: 1px solid var(--main-blue);
+}
+
+.header-btn-primary:hover {
+    background: #00a8cc;
+    border-color: #00a8cc;
+    color: #0a0f18 !important;
+    box-shadow: 0 0 12px rgba(0, 210, 255, 0.45);
+}
+
+.header-btn-outline {
+    background: transparent;
+    color: var(--main-blue) !important;
+    border: 1px solid var(--main-blue);
+}
+
+.header-btn-outline:hover {
+    color: #fff !important;
+    background: rgba(0, 210, 255, 0.12);
+    text-shadow: 0 0 8px var(--main-blue);
+}
+
+.header-lang {
+    color: #fff !important;
+    font-size: 0.95rem;
+    padding: 0.4rem 0.35rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.header-lang:hover {
+    color: var(--main-blue) !important;
+}
