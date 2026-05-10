@@ -22,6 +22,148 @@
     border-top: 1px solid var(--border-color);
     border-bottom: 1px solid var(--border-color);
 }
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.faq-item {
+    background-color: #f9f9f9;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    overflow: hidden;
+}
+
+.faq_q1 {
+    width: 100%;
+    padding: 18px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+.faq_q1:hover, .faq-question.active {
+    background-color: #e2e8f0;
+}
+
+.faq_q1 i {
+    transition: transform 0.3s ease;
+}
+
+.faq_q1.active i {
+    transform: rotate(180deg);
+}
+
+.faq_a1 {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    background-color: #fff;
+    padding: 0 20px;
+}
+
+.faq_a1 p {
+    padding: 15px 0;
+    color: #555;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.faq_q2 {
+    width: 100%;
+    padding: 18px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+.faq_q2:hover, .faq-question.active {
+    background-color: #e2e8f0;
+}
+
+.faq_q2 i {
+    transition: transform 0.3s ease;
+}
+
+.faq_q2.active i {
+    transform: rotate(180deg);
+}
+
+.faq_a2 {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    background-color: #fff;
+    padding: 0 20px;
+}
+
+.faq_a2 p {
+    padding: 15px 0;
+    color: #555;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.faq_q3 {
+    width: 100%;
+    padding: 18px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+.faq_q3:hover, .faq-question.active {
+    background-color: #e2e8f0;
+}
+
+.faq_q3 i {
+    transition: transform 0.3s ease;
+}
+
+.faq_q3.active i {
+    transform: rotate(180deg);
+}
+
+.faq_a3 {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    background-color: #fff;
+    padding: 0 20px;
+}
+
+.faq_a3 p {
+    padding: 15px 0;
+    color: #555;
+    margin: 0;
+    line-height: 1.6;
+}
 
 #service {
     background-color: var(--main-bg);
@@ -138,6 +280,48 @@
 
 #form-suscripcion .btn {
     width: auto;
+}
+.direction-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.direction-info {
+    flex: 1;
+    min-width: 300px;
+    background: #f4f7fa;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.direction-info h4 {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.direction-info p {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #555;
+}
+
+.direction-info i {
+    color: var(--main-blue, #0056b3); /* Usa tu variable de color azul o el que tengas definido */
+    font-size: 1.2rem;
+    width: 20px;
+}
+
+.direction-map {
+    flex: 1.5;
+    min-width: 300px;
 }
 
 footer {
