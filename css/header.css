@@ -110,15 +110,33 @@ header {
     text-shadow: 0 0 8px var(--main-blue);
 }
 
-.header-lang {
-    color: #fff !important;
-    font-size: 0.95rem;
-    padding: 0.4rem 0.35rem;
+/* --- NUEVOS ESTILOS PARA LOS BOTONES DE IDIOMA --- */
+.lang-selector {
     display: inline-flex;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 3px;
+    margin-left: 15px;
     align-items: center;
-    gap: 0.25rem;
 }
 
-.header-lang:hover {
-    color: var(--main-blue) !important;
+.lang-btn {
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 18px;
+    font-size: 13px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.lang-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.lang-btn.active {
+    background-color: #00d2ff;
+    color: #000000;
 }
