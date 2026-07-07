@@ -951,3 +951,63 @@ footer::before {
 .audio-toggle i {
     font-size: 1rem;
 }
+
+.footer-terms-link {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    opacity: 0.85;
+    transition: opacity 0.2s;
+}
+.footer-terms-link:hover { opacity: 1; }
+.footer-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.footer-videos {
+    width: min(1180px, calc(100% - 32px));
+    margin: 0 auto 34px;
+    padding-top: 34px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.footer-video-card {
+    padding: 18px;
+    border: 1px solid rgba(120, 210, 255, 0.18);
+    border-radius: 20px;
+    background: rgba(8, 20, 34, 0.72);
+}
+
+.footer-video-card h3 {
+    margin: 0 0 14px;
+    color: #e8f8ff;
+    font-size: 16px;
+    text-align: center;
+}
+
+.footer-video-frame {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border-radius: 14px;
+    background: #020711;
+    border: 1px solid rgba(0, 217, 255, 0.22);
+}
+
+.footer-video-frame iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+@media (max-width: 768px) {
+    .footer-videos {
+        grid-template-columns: 1fr;
+    }
+}
